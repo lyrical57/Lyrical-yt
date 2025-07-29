@@ -1,0 +1,24 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LYRICAL DOWNLOADER</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>LYRICAL DOWNLOADER</h1>
+  <% if (error) { %>
+    <p class="error"><%= error %></p>
+  <% } %>
+  <form method="POST" action="/download">
+    <input name="url" placeholder="YouTube video URL" required />
+    <select name="type">
+      <option value="video">Video (MP4)</option>
+      <option value="audio">Audio (MP3)</option>
+    </select>
+    <button type="submit">Download</button>
+  </form>
+</body>
+</html>
+```

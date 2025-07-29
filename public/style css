@@ -1,0 +1,44 @@
+Here’s a simple *public/style.css* for your *LYRICAL DOWNLOADER* site:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+input, select, button {
+  padding: 12px;
+  margin: 10px 0;
+  width: 80%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+```
+
+Save this as `public/style.css` and make sure the `server.js` serves static files from the `public` folder.
